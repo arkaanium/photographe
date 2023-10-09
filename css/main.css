@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('../assets/fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../assets/fonts/Raleway/Raleway-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #201F1F;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.site-heading {
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: Raleway;
+}
+
+.site-heading .site-heading-lower {
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 4rem;
+}
+
+.site-heading .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: #e6a756!important;
+}
+
+/* NAVBAR */
+
+#mainNav {
+    background-color: rgba(47,23,15,.9);
+    font-family: Raleway;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+    color: #e6a756;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: .9rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+}
+
+#mainNav .navbar-brand {
+    color: #e6a756;
+}
+
+@media (min-width: 992px){ 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    } 
+    
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+/* END OF NAVBAR */
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;   /* Height of the footer */
+    background:#6cf;
+}
+
+.bg-image {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.bg-image::before {
+    content: "";
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Ajoute un flou à l'image de fond */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Placez l'élément pseudo en arrière-plan */
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centrer parfaitement */
+    text-align: center; /* Aligner le texte au centre */
+    color: white; /* Couleur du texte */
+}
+
+
