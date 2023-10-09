@@ -10,11 +10,14 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
         <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+        <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
     </head>
     <body>
         <?php require('includes/menu.php');?>
         <br>
         <div class="container imgPortofolio">
+            <h1 class="pageTitle site-heading text-left text-white"><span class="site-heading-upper text-primary mb-3">Portfolio</span></h1>
+            <br>
             <div class="row">
                 <div class="col-md">
                     <div class="card mb-4 text-white" style=" border-radius: 0; background-color: #292a2b; width: 18rem;">

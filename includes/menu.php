@@ -16,8 +16,8 @@
                 <li class="nav-item <?php if(basename($_SERVER['PHP_SELF']) == 'tarifs.php'){?>active<?php } ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="tarifs">Prestations</a>
                 </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-uppercase text-expanded" href="gate/">Contact</a>
+                <li class="nav-item <?php if(basename($_SERVER['PHP_SELF']) == 'contact.php'){?>active<?php } ?> px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="contact">Contact</a>
                 </li>
             </ul>
         </div>
