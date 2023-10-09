@@ -10,31 +10,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav" style="background-color: #292A2B">
-            <div class="container" bis_skin_checked="1">
-                <a class="navbar-brand px-5"><img class="logo" width="200" src="<?=$logo?>"></a>
-                <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Charles Cantin</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive" bis_skin_checked="1">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active px-lg-4">
-                            <a class="nav-link text-uppercase text-expanded active" href="home">Accueil</a>
-                        </li>
-                        <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase text-expanded" href="#shop">Portfolio</a>
-                        </li>
-                        <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase text-expanded" href="gate/">Prestations</a>
-                        </li>
-                        <li class="nav-item px-lg-4">
-                            <a class="nav-link text-uppercase text-expanded" href="gate/">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php require('includes/menu.php');?>
         <div class="bg-image">
             <div class="overlay">
                 <h1 class="site-heading text-center text-white">

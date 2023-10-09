@@ -14,6 +14,7 @@
 
 body {
     background-color: #201F1F;
+
 }
 
 html, body {
@@ -82,7 +83,7 @@ html, body {
 /* END OF NAVBAR */
 
 .footer {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;   /* Height of the footer */
     background:#6cf;
@@ -119,3 +120,16 @@ html, body {
 }
 
 
+/* PORTFOLIO */
+
+.imgPortofolio {
+    padding-bottom: 8rem;
+}
+
+.modal-content {
+    background-color: #201F1F;
+}
+
+.modal-xxl {
+    --bs-modal-width:1500px;
+}
