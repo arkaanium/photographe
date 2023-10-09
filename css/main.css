@@ -133,3 +133,35 @@ html, body {
 .modal-xxl {
     --bs-modal-width:1500px;
 }
+
+.btn-lightwarning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #E6A756;
+    --bs-btn-border-color: #E6A756;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e29735;
+    --bs-btn-hover-border-color: #ee9116;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #E6A756;
+    --bs-btn-active-border-color: #1d1e20;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #E6A756;
+    --bs-btn-disabled-border-color: #E6A756;
+}
+
+.text-bg-lightwarning {
+    color: white!important;
+    background-color: RGBA(230, 168, 86,var(--bs-bg-opacity,1))!important;
+}
+
+.fa-brands {
+    padding-bottom: 1rem;
+    color:white;
+    transition: color 0.3s ease;
+}
+
+.fa-brands:hover {
+    color:#E6A756;
+}

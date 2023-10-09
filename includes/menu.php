@@ -13,8 +13,8 @@
                 <li class="nav-item <?php if(basename($_SERVER['PHP_SELF']) == 'portfolio.php'){?>active<?php } ?> px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item px-lg-4">
-                    <a class="nav-link text-uppercase text-expanded" href="gate/">Prestations</a>
+                <li class="nav-item <?php if(basename($_SERVER['PHP_SELF']) == 'tarifs.php'){?>active<?php } ?> px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="tarifs">Prestations</a>
                 </li>
                 <li class="nav-item px-lg-4">
                     <a class="nav-link text-uppercase text-expanded" href="gate/">Contact</a>
