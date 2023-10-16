@@ -36,6 +36,19 @@ html, body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #E6A756;
+}
+
+p {
+    color:white;
+}
+
+h1, h3 {
+    color:white;
+}
+
 .site-heading {
     text-transform: uppercase;
     line-height: 1;
@@ -104,7 +117,7 @@ html, body {
 
 .bg-image {
     width: 100%;
-    min-height: 75vh;
+    min-height: 74vh;
     position: relative;
 }
 
@@ -136,7 +149,7 @@ html, body {
 /* PORTFOLIO */
 
 .imgPortofolio {
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
 }
 
 .modal-content {
