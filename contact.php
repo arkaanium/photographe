@@ -21,7 +21,7 @@
             <h1 class="pageTitle site-heading text-left text-white"><span class="site-heading-upper text-primary mb-3">Me contacter</span></h1>
             <br>
             <div class="row text-white">
-                <div class="col">
+                <div class="col-md">
                     <h5 class="site-heading text-left text-white"><span class="section-heading-lower mb-3">Mes coordonnées</span></h5>
                     <div id="map" style="height: 400px;"></div>
                     <br>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <h5 class="site-heading text-left text-white"><span class="section-heading-lower mb-3">Envoyer un message</span></h5>
                     <form action="actions/messages.php?do=sendMessage&return=contactus" method="post" id="contactForm">
                         <div class="mb-2">
@@ -77,6 +77,9 @@
                         </div>
                         <button type="submit" id="submitBtn" data-sitekey="6Lep-hkoAAAAAHwYItfXA4ddsuBJLTAo15ZPwet4" data-callback='onSubmit' data-action='submit' class="btn btn-lightwarning g-recaptcha">Envoyer</button>
                         <br>
+                        <br>
+        <br>
+        <br>
                     </form>
                 </div>
             </div>
