@@ -19,7 +19,7 @@
         <h1 class="pageTitle site-heading text-left text-white"><span class="site-heading-upper text-primary mb-3">Mes prestations</span></h1>
         <br>
             <div class="row text-center">
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
@@ -59,9 +59,8 @@
                     </div>
                 </div>
             </div>
-            <br>
             <div class="row text-center">
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
@@ -74,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
@@ -87,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md">
+                <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
