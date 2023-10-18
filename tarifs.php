@@ -21,14 +21,14 @@
             <div class="row text-center">
                 <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
-                        <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
+                        <img src="https://cantincharles-portefolio.netlify.app/images/portrait/portrait1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Juste moi »</h5>
                             <p class="card-text">Séance pour une personne, en extérieur ou en studio.</p>
                             <span class="badge text-bg-lightwarning">130 €</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=1" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
@@ -41,20 +41,20 @@
                             <span class="badge text-bg-lightwarning">195 €</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=2" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
-                        <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
+                        <img src="https://cantincharles-portefolio.netlify.app/images/bapt%C3%AAme/bapteme1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« J'immortalise l'évènement » sur mesure</h5>
                             <p class="card-text">Prestation de mariage ou baptême</p>
                             <span class="badge text-bg-lightwarning">Sur devis</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=3" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
@@ -62,40 +62,40 @@
             <div class="row text-center">
                 <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
-                        <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
+                        <img src="https://cantincharles-portefolio.netlify.app/images/grossesse/grossesse1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Il était une fois »</h5>
                             <p class="card-text">Photo de grossesse (À votre domicile, en extérieur ou en studio)</p>
                             <span class="badge text-bg-lightwarning">160 €</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=4" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
-                        <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
+                        <img src="https://cantincharles-portefolio.netlify.app/images/b%C3%A9b%C3%A9/b%C3%A9b%C3%A91.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Mon bébé »</h5>
                             <p class="card-text">Photo d'enfant jusqu'à 3 ans (photo à domicile)</p>
                             <span class="badge text-bg-lightwarning">100 €</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=5" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md mb-3">
                     <div class="card" style="width: 18rem; background-color: #292A2B">
-                        <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
+                        <img src="https://cantincharles-portefolio.netlify.app/images/famille/famille4.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Famille »</h5>
                             <p class="card-text">Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio.<br>30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
                             <span class="badge text-bg-lightwarning">220 €</span>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-lightwarning">Me contacter</a>
+                            <a href="contact?about=6" class="btn btn-lightwarning">Me contacter</a>
                         </div>
                     </div>
                 </div>
