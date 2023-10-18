@@ -1,5 +1,14 @@
 <?php
+session_start([
+    'cookie_lifetime' => 315360000,
+]);
+
 include('includes/config.php');
+
+if(isset($_SESSION['id'])){
+    header('Location: gestion');
+}
+
 ?>
 <!doctype html>
 <html lang="en">
