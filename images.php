@@ -37,6 +37,7 @@ if(!isset($_SESSION['id'])){
                 <div class="col-md verticalSeperatorLeft">
                     <br>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'published'){?><div class="alert alert-success" role="alert">Photo publiée avec succès</div><?php }?>
+                    <?php if(isset($_GET['r']) && $_GET['r'] == 'nametagUpdated'){?><div class="alert alert-success" role="alert">Étiquette modifiée avec succès</div><?php }?>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'deleted'){?><div class="alert alert-success" role="alert">Photo supprimée avec succès</div><?php }?>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'invavlid_type'){?><div class="alert alert-danger" role="alert">Format d'image invalide. Format accepté : jpeg, jpg et png</div><?php }?>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'too_large'){?><div class="alert alert-danger" role="alert">Poids de l'image trop élevé (Max 3Mo)</div><?php } ?>
@@ -58,7 +59,7 @@ if(!isset($_SESSION['id'])){
                             while($images = $getImages->fetch()){
                             ?>
                                 <tr>
-                                    <td><a href="#"><span class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#delImageConfirmation<?=$images['id'];?>"><i class="fa-solid fa-trash text-light"></i></span></a></td>
+                                    <td><a href="#" title="Supprimer la photo"><span class="badge text-bg-danger" data-bs-toggle="modal" data-bs-target="#delImageConfirmation<?=$images['id'];?>"><i class="fa-solid fa-trash text-light"></i></span></a> <a href="#" title="Ajouter/modifier l'étiquette"><span class="badge text-bg-success" data-bs-toggle="modal" data-bs-target="#nametag<?=$images['id'];?>"><i class="fa-solid fa-tag text-light"></i></span></a></td>
                                     <td><a class="text-muted" href="img/uploads/<?=$images['image'];?>" target="_blank"><?=$images['image'];?></a><br><?=htmlspecialchars($images['nametag']);?></td>
                                     <td><?=getCategory($images['type'])?></td>
                                     <td><?=$images['upload_date'];?></td>
@@ -66,18 +67,40 @@ if(!isset($_SESSION['id'])){
                                 <div class="modal fade" id="delImageConfirmation<?=$images['id'];?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Supprimer la photo n°<?=$images['id'];?></h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Supprimer la photo n°<?=$images['id'];?></h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="text-danger">Cette action est <b>irréversible</b></h5>
+                                                <span>Voulez vous vraiment supprimer l'image <b><?=$images['image']?></b> mise en ligne le <b><?=$images['upload_date'];?></b></span><br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                                <a href="actions/portfolio.php?do=deleteImage&id=<?=$images['id'];?>"><button type="button" class="btn btn-sm btn-outline-danger">Confirmer la suppression</button></a>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            <h5 class="text-danger">Cette action est <b>irréversible</b></h5>
-                                            <span>Voulez vous vraiment supprimer l'image <b><?=$images['image']?></b> mise en ligne le <b><?=$images['upload_date'];?></b></span><br>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                            <a href="actions/portfolio.php?do=deleteImage&id=<?=$images['id'];?>"><button type="button" class="btn btn-sm btn-outline-danger">Confirmer la suppression</button></a>
-                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="nametag<?=$images['id'];?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modifier l'étiquette</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <form action="actions/portfolio.php?do=updateNametag&id=<?=$images['id']?>" method="post">
+                                                <div class="modal-body">
+                                                    <div class="input-group mb-3">
+                                                        <label class="input-group-text" for="inputGroupSelect01">Étiquette</label>
+                                                        <input type="text" class="form-control" name="nametag" value="<?=$images['nametag']?>" placeholder="Exemple : Mariage Mélanie (repas)" required>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Annuler</button>
+                                                    <button type="submit" class="btn btn-sm btn-success">Modifier</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

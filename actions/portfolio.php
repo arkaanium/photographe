@@ -59,6 +59,15 @@ if(isset($_SESSION['id']) && isset($_GET['do'])){
                 header('Location: ../images');
             }
             break;
+        case 'updateNametag':
+            if(isset($_POST['nametag'])){
+                $update = $bdd->prepare('UPDATE portfolio SET nametag=:nametag WHERE id=:id');
+                $update->execute([ 'nametag' => htmlspecialchars($_POST['nametag']), 'id' => htmlspecialchars($_GET['id']) ]);
+                header('Location: ../images?r=nametagUpdated');
+            }else{
+                header('Location: ../images');
+            }
+            break;
         default:
             header('Location: ../gestion');
             break;
