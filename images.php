@@ -38,6 +38,8 @@ if(!isset($_SESSION['id'])){
                     <br>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'published'){?><div class="alert alert-success" role="alert">Photo publiée avec succès</div><?php }?>
                     <?php if(isset($_GET['r']) && $_GET['r'] == 'deleted'){?><div class="alert alert-success" role="alert">Photo supprimée avec succès</div><?php }?>
+                    <?php if(isset($_GET['r']) && $_GET['r'] == 'invavlid_type'){?><div class="alert alert-danger" role="alert">Format d'image invalide. Format accepté : jpeg, jpg et png</div><?php }?>
+                    <?php if(isset($_GET['r']) && $_GET['r'] == 'too_large'){?><div class="alert alert-danger" role="alert">Poids de l'image trop élevé (Max 3Mo)</div><?php } ?>
                     <?php include('includes/passwordUpdateMessages.php');?>
                     <?php
                     $getImages = $bdd->query('SELECT id, image, nametag, type, author, DATE_FORMAT(upload_date, \'%d/%m/%Y\') AS upload_date FROM portfolio ORDER BY id DESC');

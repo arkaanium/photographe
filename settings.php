@@ -35,7 +35,7 @@ if(!isset($_SESSION['id'])){
                 </div>
                 <div class="col-md verticalSeperatorLeft">
                     <?php
-                    $getSettings = $bdd->query('SELECT social_media, home_background, DATE_FORMAT(update_date, \'%d/%m/%Y\') AS update_date, update_author FROM settings');
+                    $getSettings = $bdd->query('SELECT social_media, DATE_FORMAT(update_date, \'%d/%m/%Y\') AS update_date, update_author FROM settings');
                     $settings = $getSettings->fetch();
                     $social_media = json_decode($settings['social_media']);
                     ?>
@@ -46,14 +46,14 @@ if(!isset($_SESSION['id'])){
                             <?php if(isset($_GET['r']) && $_GET['r'] == 'linkUpdated'){?><div class="alert alert-success" role="alert">Liens mis à jour avec succès</div><?php }?>
                             <?php if(isset($_GET['r']) && $_GET['r'] == 'error'){?><div class="alert alert-danger" role="alert">Une erreur s'est produite, veuillez réessayer</div><?php }?>
                             <?php include('includes/passwordUpdateMessages.php');?>
-                            <form action="actions/settings.php?do=updateSm" method="post">
+                            <form action="actions/settings.php?do=updateLinks" method="post">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Facebook</span>
-                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->facebook?>">
+                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->facebook?>" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Instagram</span>
-                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->instagram?>">
+                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->instagram?>" required>
                                 </div>
                                 <br>
                                 <div class="text-center">
@@ -65,17 +65,23 @@ if(!isset($_SESSION['id'])){
                             <h5 class="d-flex">Fond d'écran accueil</h5>
                             <br>
                             <?php 
-                            if(isset($_GET['r']) && $_GET['r'] == 'scheduleUpdated'){?><div class="alert alert-success" role="alert">Fond d'écran mis à jour avec succès</div><?php }
+                            if(isset($_GET['r']) && $_GET['r'] == 'bgUpdated'){?><div class="alert alert-success" role="alert">Fond d'écran mis à jour avec succès</div><?php }
                             if(isset($_GET['r']) && $_GET['r'] == 'error'){?><div class="alert alert-danger" role="alert">Une erreur s'est produite, veuillez réessayer</div><?php } 
+                            if(isset($_GET['r']) && $_GET['r'] == 'invavlid_type'){?><div class="alert alert-danger" role="alert">Format d'image invalide. Format accepté : jpg</div><?php }
+                            if(isset($_GET['r']) && $_GET['r'] == 'too_large'){?><div class="alert alert-danger" role="alert">Poids de l'image trop élevé (Max 3Mo)</div><?php }
                             ?>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">Image</span>
-                                <input type="file" name="picture" class="form-control" required>
-                            </div>
-                            <br>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-success">Sauvegarder</button>
-                            </div>
+                            <p>Image actuelle:</p>
+                            <img src="img/bg.jpg" class="mb-3" width="200">
+                            <form action="actions/settings.php?do=updateBg" method="post" enctype="multipart/form-data">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Image</span>
+                                    <input type="file" name="background" class="form-control" required>
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-success">Sauvegarder</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

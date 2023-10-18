@@ -17,7 +17,7 @@ if(isset($_SESSION['id']) && isset($_GET['do'])){
                     $tmp_name = $_FILES['picture']['tmp_name'];
 
                     if($error === 0){
-                        if($img_size > 1000000) {
+                        if($img_size > 3000000) {
                             header('Location: ../images?r=too_large');
                         }else{
                             $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
