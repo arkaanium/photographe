@@ -122,7 +122,7 @@ if(!isset($_SESSION['id'])){
                 </div>
             </div>
             <hr>
-            <p class="text-muted d-flex">Garage V.Parrot &copy; Copyright 2023</p>
+            <p class="text-muted d-flex">Charles Cantin &copy; 2023 Développé par Teddy Hervier</p>
         </div>
         <br>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
