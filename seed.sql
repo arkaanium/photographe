@@ -1,0 +1,2 @@
+INSERT INTO users (id, name, email, password, creation_date) VALUES (1, 'Charles Cantin', 'charles.cantin@gmail.com', '926bb8fb98687c7cd2defa155c8b4f97742b4f4b7a60ac3ec1694a48afe483fa', NOW());
+INSERT INTO settings (id, social_media, update_date, update_author) VALUES (1, '{\"facebook\":\"http:\\/\\/www.facebook.com\",\"instagram\":\"http:\\/\\/www.instagram.com\"}', NOW(), '');

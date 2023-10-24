@@ -1,0 +1,6 @@
+INSERT INTO portfolio (id, image, nametag, type, author, upload_date) VALUES (9, 'IMG-6537c11f4a14a4.14523353.jpg', 'famille', 4, 'Charles Cantin', NOW()),
+INSERT INTO portfolio (id, image, nametag, type, author, upload_date) VALUES (10, 'IMG-6537c129a05483.61220943.jpg', 'image d\''un couple', 6, 'Charles Cantin', NOW()),
+INSERT INTO portfolio (id, image, nametag, type, author, upload_date) VALUES (11, 'IMG-6537c134d758a0.25786840.jpg', 'image d\''un bébé', 3, 'Charles Cantin', NOW()),
+INSERT INTO portfolio (id, image, nametag, type, author, upload_date) VALUES (12, 'IMG-6537c13f077539.08253601.jpeg', 'Mariage', 1, 'Charles Cantin', NOW()),
+INSERT INTO portfolio (id, image, nametag, type, author, upload_date) VALUES (13, 'IMG-6537c1800cc0e9.47394765.jpg', 'image couple aventure', 6, 'Charles Cantin', NOW());
+INSERT INTO messages (id, author, subject, message, email, phone, creation_date, status) VALUES (1, 'Test Test', 'Demande de renseignement', 'dzdqz', 'ar@gmail.com', '5022200', NOW(), 0);
