@@ -19,8 +19,8 @@
         <h1 class="pageTitle site-heading text-left text-white"><span class="site-heading-upper text-primary mb-3">Mes prestations</span></h1>
         <br>
             <div class="row text-center">
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style=" background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/portrait/portrait1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Juste moi »</h5>
@@ -32,8 +32,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/couple/couple3.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Pour deux »</h5>
@@ -45,8 +45,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/bapt%C3%AAme/bapteme1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« J'immortalise l'évènement » sur mesure</h5>
@@ -60,8 +60,8 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/grossesse/grossesse1.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Il était une fois »</h5>
@@ -73,8 +73,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/b%C3%A9b%C3%A9/b%C3%A9b%C3%A91.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Mon bébé »</h5>
@@ -86,8 +86,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md mb-3">
-                    <div class="card" style="width: 18rem; background-color: #292A2B">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="background-color: #292A2B">
                         <img src="https://cantincharles-portefolio.netlify.app/images/famille/famille4.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-white">
                             <h5 class="card-title">« Famille »</h5>

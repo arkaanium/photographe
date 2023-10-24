@@ -44,8 +44,8 @@ if($items>0){
     <?php 
     while($portfolio = $getPortfolio->fetch()){
     ?>
-        <div class="col-md">
-            <div class="card mb-4 text-white" style=" border-radius: 0; background-color: #292a2b; width: 18rem;">
+        <div class="col-md-3">
+            <div class="card mb-4 text-white" style=" border-radius: 0; background-color: #292a2b;">
                 <div data-bs-toggle="modal" data-bs-target="#img<?=$portfolio['id']?>" style="background-image:url('img/uploads/<?=$portfolio['image']?>'); height:200px; background-size:cover;" class="catalog-image" bis_skin_checked="1"></div>
             </div>
             <div class="modal fade" id="img<?=$portfolio['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
