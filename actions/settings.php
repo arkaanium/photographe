@@ -10,6 +10,12 @@ if(isset($_GET['do']) && isset($_SESSION['id'])){
     switch ($_GET['do']) {
         case 'updateLinks':
             if(isset($_POST['facebook']) && isset($_POST['instagram'])){
+                if (!preg_match("~^(?:f|ht)tps?://~i", $_POST['facebook'])) {
+                    $_POST['facebook'] = "http://" . $_POST['facebook'];
+                }
+                if (!preg_match("~^(?:f|ht)tps?://~i", $_POST['instagram'])) {
+                    $_POST['instagram'] = "http://" . $_POST['instagram'];
+                }
                 $social_media = [
                     'facebook' => htmlspecialchars($_POST['facebook']),
                     'instagram' => htmlspecialchars($_POST['instagram'])

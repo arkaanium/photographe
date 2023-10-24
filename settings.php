@@ -49,11 +49,11 @@ if(!isset($_SESSION['id'])){
                             <form action="actions/settings.php?do=updateLinks" method="post">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Facebook</span>
-                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->facebook?>" required>
+                                    <input type="text" class="form-control" name="facebook" placeholder="" value="<?=$social_media->facebook?>" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Instagram</span>
-                                    <input type="text" class="form-control" placeholder="" value="<?=$social_media->instagram?>" required>
+                                    <input type="text" class="form-control" name="instagram" placeholder="" value="<?=$social_media->instagram?>" required>
                                 </div>
                                 <br>
                                 <div class="text-center">
